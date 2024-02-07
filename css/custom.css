@@ -1,0 +1,386 @@
+*{
+    font-family: 'PT Serif', serif;
+}
+
+
+/* nav bar  */
+.logo{
+    width: 80px;
+    height:80px;
+}
+.uniName{
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #081a35;
+    margin-left: 2%;
+    font-family: sans-serif;
+    
+}
+.uniNameLink{
+    text-decoration: none;
+}
+
+.dropdown-menu{
+    --bs-dropdown-link-active-bg: #052659 !important;
+}
+.navbar-nav {
+    
+    --bs-nav-link-hover-color: #1a65d4 !important;
+    --bs-nav-link-color: rgb(0, 0, 0);
+
+
+    
+}
+
+.nav-item::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: rgb(72, 96, 133);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    --bs-nav-link-color:var(--bs-btn-border-color);
+    
+}
+
+.nav-item:hover::after{
+    width:100%;
+
+}
+
+.navbar{
+    transition: all 0.5s;
+    
+}
+.navbar-scrolled{
+    background-color: #ffffff;
+    --bs-nav-link-color:#052659;
+    
+    
+    
+    
+}
+.nav-item{
+    color: rgb(5, 5, 5);
+}
+
+.navitemScrolled{
+    color:white;
+}
+
+/* nav end  */
+
+.carousel_image{
+    position: relative;
+  
+}
+
+.carousel_text{
+    position:absolute;
+    top:25%;
+    left: 10%;
+    color: white;
+    background-color: rgba(29, 29, 29, 0.6);
+    padding: 2%;
+}
+
+.welcometext{
+    font-size: 90%;
+    letter-spacing: 0.9px;
+    border-radius: 6px;
+    padding: 5%;
+    background-color:#081a35;
+}
+
+.mini_menu{
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+}
+
+
+.btn-outline-secondary {
+    --bs-btn-color: #052659;
+    --bs-btn-hover-bg: #052659;
+    --bs-btn-border-color: #052659;
+
+}
+
+.menubtn{
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+}
+
+/* preview cards  */
+.divided{
+    width: 20%;
+    border: 2px solid #a3b8d6;
+}
+
+.cardImage{
+    position: relative;
+}
+.card_body{
+    position: absolute;
+    padding: 2%;
+    color: white;
+    top:10%;
+    left: 10%;
+}
+
+.pre_hover{
+    overflow: hidden;
+}
+.preimg:hover{
+transform: scale(1.1);
+transition: .8s ease-in-out;
+}
+
+.footerpart{
+    background-color: #0d141f;
+    color: white;
+}
+
+.fitem{
+
+    color: white;
+}
+
+.bgdesign{
+    
+    padding: 2%;
+    border-radius: 18px;
+}
+
+.cardfornews{
+    background-color: rgb(10, 22, 41);
+    color: white;
+}
+
+.titleforNews{
+    color: rgb(3, 3, 3);
+}
+.iconContainer{
+    background-color: #052659;
+    
+}
+.icons{
+    width: 60px;
+    height: 60px;
+   
+}
+.icontext{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.videoView{
+    padding:0 14%;
+}
+
+
+/* for student comment  */
+
+.studentComment{
+    
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonial{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #86a6d4;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+.comCol{
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color: #86a6d4;
+    padding: 25px;
+    cursor: pointer;
+}
+.stuImg{
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+
+
+.footerMenu{
+    list-style: none;
+}
+
+.footer ul li a{
+text-decoration: none;
+color:white;
+text-align: center;
+}
+
+.footerItemLink{
+    text-decoration: none;
+}
+
+/* for history   */
+
+.coverHistory{
+    position: relative;
+}
+
+.logoPosition{
+    position: absolute;
+    top:20%;
+    left: 8%;
+    color:white;
+   
+}
+
+.histlogo{
+    width: 70%;
+    height: 70%;
+}
+
+.introHist{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* for News and Events  */
+.newsImg{
+    position: relative;
+}
+.newsTitle{
+    position: absolute;
+    padding:25%;
+    color: white;
+    top:5%;
+    left:2%;
+}
+
+/* for facilities  */
+.facilities{
+    width:90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 2%;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;;
+}
+
+
+
+/* for requirements  */
+.cta {
+    margin:100px auto;
+    width: 86%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/underg1.jpg);
+    background-position: center ;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.cta a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* for undergraduate  */
+.advText{
+
+    padding: 10% 10%;
+}
+
+
+.undergText{
+    font-weight: bold;
+    font-size: 180%;
+}
+.undergText2{
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.underAdv{
+    padding: 5% 15%;
+    background-color: #081a35;
+    color: white;
+}
+
+
+
+
+/* contact us css  */
+
+.backgroundSolid{
+    background-color: #052659;
+}
+
+
+/* mini card  */
+.card{
+    margin: 10px auto;
+    box-shadow: 0px 2px 4px 0 rgba(0,0,0,0.2);
+    border-radius: 6px;
+    height: 100%;
+    transition: 0.3s;
+  }
+.card:hover {
+  box-shadow: 1px 10px 16px 0 rgba(0,0,0,0.3);
+}
+  .card-title{
+    text-align: center;
+    color: #666666;
+    font-weight: bold;
+  }
+  .card-text{
+        font-weight: 500;
+  color: #66686b;
+  }
+  .card-image{
+    text-align: center;
+    margin: 5vh 0;
+  }
+  .card-text{
+    text-align: center;
+  }
+
+  .title-heading{
+    font-size: 2.2em;
+    text-align: center;
+    margin: 4%;
+    font-weight: bold;
+
+  }
+
+
+
+  

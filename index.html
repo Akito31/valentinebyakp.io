@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="custom.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="container text-center py-5">
+            <div class="imgcard mb-4 mt-5">
+                <img src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif" alt="" class="imgView ">
+                <img src="	https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="" class="imgView2">
+            </div>
+            <!-- text  -->
+            <div class="question">
+                <h1  class="quest">Will you be my valentine?</h1>
+                <h2 class="loveLetters mt-4">You're my euphoria and the valuable thing I've ever had. <br>I love every single small things that we do.<br><br><span class="fw-bold">I'm always with you . . .</span></h2>
+                
+                    <button class="btn yesBtn rounded-pill px-4 mt-3" id="yesButton">Yes</button>
+                    <button class="btn yesBtn2 mt-3" id="yesButton2">Yes</button>
+                    <button class="btn yesBtn3 mt-3" id="yesButton3">Yes</button>
+                    <button class="btn yesBtn4 mt-3" id="yesButton4">Yes</button>
+
+                    <button class="btn noBtn btn-secondary rounded-pill px-4 mt-3" id="noButton">No</button>
+                    <button class="btn noBtn2 btn-sm btn-secondary rounded-pill px-4 mt-3" id="noButton2">No</button>
+                    <button class="btn noBtn3 btn-secondary text-center rounded-pill mt-3" id="noButton3"><span >no</span></button>
+                    <button class="btn noBtn4 btn-sm btn-secondary rounded-pill px-1 mt-3" id="noButton4"></button>
+
+
+
+            </div>
+            <br>
+            <p class="tranText"></p>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cdnjs.js"></script>
+   
+    <script src="jQuery/jquery.min.js"></script>
+   <script>
+     $(document).ready(function(){
+        let tranQues="Yayyyy! I love U";
+        let tranText1="Are you Sure?";
+        let tranText2="If you say no, I'll be very sad.";
+        let tranText3="I'll be very very very sad. ";
+        let tranText4="Ok, click what you want or choose your fav pink button ^ "
+
+        $('p').hide();
+        $('.noBtn2').hide();
+        $('.noBtn3').hide();
+        $('.noBtn4').hide();
+        $('.yesBtn2').hide();
+        $('.yesBtn3').hide();
+        $('.yesBtn4').hide();
+        $('.imgView2').hide();
+        $('.loveLetters').hide();
+        $('#noButton').click(function(){
+            $('p').fadeIn('slow');
+            $('.noBtn').css({'background-color':'grey'});
+            
+            $('.yesBtn').css({'background-color':'pink'});
+            $('.noBtn2').fadeIn('slow');
+            $('.noBtn').hide();
+            $('.noBtn3').hide();
+           
+
+            $('.yesBtn2').fadeIn('slow');
+            $('.yesBtn').hide();
+
+            $('.tranText').text(tranText1);
+
+
+            // $('#noButton').animate({left:'350px'},2000);
+            // $('#noButton').animate({top:'350px'},2000);
+            // $('#noButton').animate({left:'0px'},2000);
+            // $('#noButton').animate({top:'0px'},2000);
+           
+            // $('#panel').animate({bottom:'350px'},3000);
+            // $('#panel').animate({letterSpacing:'2px'});
+            // $('#panel').animate({fontSize:'20px'});
+        })
+        $('#noButton2').click(function(){
+            $('.noBtn3').fadeIn('slow');
+            $('.noBtn2').hide();
+            $('.tranText').text(tranText2);
+            $('.yesBtn3').fadeIn('slow');
+            $('.yesBtn2').hide();
+
+
+        })
+        $('#noButton3').click(function(){
+            $('.noBtn2').hide();
+            $('.noBtn3').hide();
+            $('.tranText').text(tranText3);
+            $('.noBtn4').fadeIn('slow');
+            $('.yesBtn4').fadeIn('slow');
+            $('.yesBtn3').hide();
+
+        })
+        $('#noButton4').click(function(){
+            $('.noBtn2').hide();
+            $('.noBtn3').hide();
+            $('.noBtn4').hide();
+            $('.tranText').text(tranText4);
+            $('.yesBtn4').hide();
+            $('.yesBtn2').fadeIn('slow');
+
+        })
+        $('#yesButton').click(function(){
+            $('.yesBtn').hide();
+            $('.noBtn').hide();
+
+            $('.imgView2').fadeIn('slow');
+            $('.imgView').hide();
+            $('.quest').text(tranQues);
+            $('.loveLetters').fadeIn('slow');
+        })
+        $('#yesButton2').click(function(){
+            $('.yesBtn2').hide();
+            $('.noBtn2').hide();
+
+            $('.imgView2').fadeIn('slow');
+            $('.imgView').hide();
+            $('.quest').text(tranQues);
+            $('.tranText').hide();
+            $('.loveLetters').fadeIn('slow');
+        })
+        $('#yesButton3').click(function(){
+            $('.yesBtn3').hide();
+            $('.noBtn3').hide();
+
+            $('.imgView2').fadeIn('slow');
+            $('.imgView').hide();
+            $('.quest').text(tranQues);
+            $('.tranText').hide();
+            $('.loveLetters').fadeIn('slow');
+
+        })
+        $('#yesButton4').click(function(){
+            $('.yesBtn4').hide();
+            $('.noBtn4').hide();
+
+            $('.imgView2').fadeIn('slow');
+            $('.imgView').hide();
+            $('.quest').text(tranQues);
+            $('.tranText').hide();
+            $('.loveLetters').fadeIn('slow');
+
+        })
+        // $('#start').click(function(){
+        //     $('#panel').animate({right:'350px'},2000);
+        //     $('#panel').animate({bottom:'350px'},3000);
+        // })
+    })
+   </script>
+
+</body>
+</html>
